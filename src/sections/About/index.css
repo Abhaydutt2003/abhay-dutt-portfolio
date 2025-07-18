@@ -3,6 +3,7 @@
   align-items: start;
   color: var(--color-text);
   gap: 1rem;
+  /* background-color: rebeccapurple; */
 }
 
 #about-text {
@@ -10,7 +11,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-
+  max-width: 40rem;
+  text-align: start;
+  /* background-color: blue; */
+  height: 100%;
   h1 {
     margin: 0;
     font-size: var(--font-size-xxl);
@@ -26,16 +30,11 @@
   }
   p {
     margin: 0;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     line-height: 1.6;
     color: var(--color-text);
     opacity: 0.9;
   }
-}
-.about-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 @media (max-width: 1024px) {

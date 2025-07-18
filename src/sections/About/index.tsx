@@ -6,12 +6,13 @@ const About = () => {
     <section id="section-container">
       <Avatar />
       <div id="about-text">
-        <h1>Abhay Dutt</h1>
-        <h4>Software Engineer</h4>
+        <h1>Hi, I'm Abhay Dutt 👋 </h1>
+        <h4>Full Stack developer</h4>
         <p>
-          A Full-Stack Developer with a drive for innovation, effortlessly
-          mastering any technology to build comprehensive and scalable solutions
-          from concept to deployment.
+          A developer with an insatiable drive to explore and master emerging
+          technologies, committed to continuous improvement and professional
+          growth. I approach every challenge as an opportunity to expand my
+          skill set.
         </p>
       </div>
     </section>
