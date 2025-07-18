@@ -1,0 +1,68 @@
+.theme-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.theme-toggle-btn {
+  /* background: var(--color-bg-secondary); */
+  background: transparent;
+  color: var(--color-text);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: background 0.2s;
+}
+
+.theme-toggle-btn:hover,
+.theme-toggle-btn:focus {
+  background: var(--color-surface);
+}
+
+.theme-toggle-dropdown {
+  position: absolute;
+  background: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  margin-top: 0.25em;
+  overflow: hidden;
+  min-width: 160px;
+}
+
+.theme-toggle-option {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  color: var(--color-surface);
+  transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .theme-toggle-btn {
+    font-size: var(--font-size-sm);
+  }
+  .theme-toggle-dropdown {
+    right: 0;
+  }
+  .theme-toggle-option {
+    padding: 0.25em 0.5em;
+    font-size: var(--font-size-sm);
+  }
+}
+
+.theme-toggle-option:hover {
+  background: var(--color-text-muted);
+}
+.theme-toggle-option.selected {
+  font-weight: bold;
+  background: var(--color-text-muted);
+}
