@@ -19,20 +19,24 @@
   --color-success: #a3be8c;
   --color-info: #88c0d0;
 
-  /* UI Roles */
-  --card-bg: var(--color-bg-secondary);
-  --card-border: var(--color-border);
-  --card-text: var(--color-text);
-  --card-heading: var(--color-text);
+  --shadow-xs: 0 1px 2px 0 #3b4252;
+  --shadow-sm: 0 2px 4px #3b4252;
+  --shadow-md: 0 4px 8px #3b4252;
+  --shadow-lg: 0 8px 16px #3b4252;
+  --shadow-xl: 0 12px 24px #3b4252;
 
-  --button-bg: var(--color-primary);
-  --button-text: var(--color-bg);
-  --button-bg-hover: var(--color-primary-hover);
-
-  --input-bg: var(--color-surface);
-  --input-border: var(--color-border);
-  --input-text: var(--color-text);
-  --input-placeholder: var(--color-text-muted);
+  /* font related */
+  --font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
 }
 
 /* ─────────────── Frappe Theme ─────────────── */
@@ -57,18 +61,21 @@
   --color-success: #a6d189;
   --color-info: #99d1db;
 
-  /* UI Roles */
-  --card-bg: var(--color-bg-secondary);
-  --card-border: var(--color-border);
-  --card-text: var(--color-text);
-  --card-heading: var(--color-text);
+  --shadow-xs: 0 1px 2px 0 rgba(48, 52, 70, 0.5);
+  --shadow-sm: 0 2px 4px rgba(48, 52, 70, 0.4);
+  --shadow-md: 0 4px 8px rgba(48, 52, 70, 0.3);
+  --shadow-lg: 0 8px 16px rgba(48, 52, 70, 0.25);
+  --shadow-xl: 0 12px 24px rgba(48, 52, 70, 0.2);
 
-  --button-bg: var(--color-primary);
-  --button-text: var(--color-bg);
-  --button-bg-hover: var(--color-primary-hover);
-
-  --input-bg: var(--color-surface);
-  --input-border: var(--color-border);
-  --input-text: var(--color-text);
-  --input-placeholder: var(--color-text-muted);
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
 }

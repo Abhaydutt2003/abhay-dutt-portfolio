@@ -1,11 +1,12 @@
-import { ThemeToggle } from "./components";
+import { About } from "./sections";
+import { Divider } from "./components";
 import "./styles/App.css";
+
 function App() {
   return (
     <div className="app-container">
-      <ThemeToggle />
-      {/* <div className=" btn btn-primary">hi</div>
-      <div>hi</div> */}
+      <About />
+      <Divider />
     </div>
   );
 }
