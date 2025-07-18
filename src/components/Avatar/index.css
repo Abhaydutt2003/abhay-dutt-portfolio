@@ -1,0 +1,35 @@
+#avatar-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1em;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.avatar-img {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2.5px solid var(--color-bg);
+  background: var(--color-bg-secondary);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .avatar-img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 738px) {
+  .avatar-img {
+    width: 5.25rem;
+    height: 5.25rem;
+  }
+}

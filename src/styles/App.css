@@ -1,8 +1,23 @@
 .app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
-  background-color: var(--color-bg);
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 0rem;
   min-height: 100vh;
+  background-color: var(--color-bg);
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .app-container {
+    padding: 3rem 1.5rem;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 738px) {
+  .app-container {
+    padding: 1.5rem 0.5rem;
+    max-width: 100vw;
+  }
 }
