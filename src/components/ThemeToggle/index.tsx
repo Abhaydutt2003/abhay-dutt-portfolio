@@ -5,6 +5,7 @@ import {
   Cat,
   Trees,
   ChevronUpIcon,
+  BoomBox,
 } from "lucide-react";
 import "./index.css";
 
@@ -12,6 +13,7 @@ const themes = {
   nord: "NORD",
   catppuccin: "catppuccin",
   everforest: "EVERFOREST",
+  gruvbox: "gruvbox",
 } as const;
 
 type ThemeKey = keyof typeof themes;
@@ -19,6 +21,7 @@ const themeIcons: Record<ThemeKey, React.ElementType> = {
   nord: MountainSnow,
   catppuccin: Cat,
   everforest: Trees,
+  gruvbox: BoomBox,
 };
 
 const ThemeToggle = () => {

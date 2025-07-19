@@ -10,26 +10,56 @@
 
 .avatar-img {
   display: block;
-  width: 8rem;
-  height: 8rem;
   object-fit: cover;
   border-radius: 50%;
   border: 2.5px solid var(--color-bg);
   background: var(--color-bg-secondary);
 }
 
-/* Tablet */
+.avatar-size-large .avatar-img {
+  width: 8rem;
+  height: 8rem;
+}
+.avatar-size-medium .avatar-img {
+  width: 6rem;
+  height: 6rem;
+}
+.avatar-size-small .avatar-img {
+  width: 4rem;
+  height: 4rem;
+}
+.avatar-size-x-small .avatar-img {
+  width: 2rem;
+  height: 2rem;
+}
+
 @media (max-width: 1024px) {
-  .avatar-img {
+  .md\:avatar-size-medium .avatar-img {
+    width: 8rem;
+    height: 8rem;
+  }
+  .md\:avatar-size-small .avatar-img {
     width: 6rem;
     height: 6rem;
   }
+  .md\:avatar-size-x-small .avatar-img {
+    width: 4rem;
+    height: 4rem;
+  }
 }
-
-/* Mobile */
-@media (max-width: 738px) {
-  .avatar-img {
-    width: 5.25rem;
-    height: 5.25rem;
+@media (max-width: 768px) {
+  .sm\:avatar-size-small .avatar-img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .sm\:avatar-size-x-small .avatar-img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .xs\:avatar-size-x-small .avatar-img {
+    width: 4rem;
+    height: 4rem;
   }
 }

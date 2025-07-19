@@ -1,7 +1,13 @@
 import "./index.css";
 
-const Divider = () => {
-  return <div className="divider" />;
+const Divider = ({
+  noBottomPadding = false,
+}: {
+  noBottomPadding?: boolean;
+}) => {
+  return (
+    <div className={`divider ${noBottomPadding ? "no-bottom-padding" : ""}`} />
+  );
 };
 
 export default Divider;

@@ -1,0 +1,29 @@
+#work-section {
+  p {
+    margin: 0;
+  }
+}
+.company-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-items: start;
+  h5 {
+    color: var(--color-text);
+    margin: 0;
+  }
+  span {
+    color: var(--color-text-muted);
+    margin: 0;
+    font-size: var(--font-size-xs);
+  }
+}
+
+.experience-description {
+  h2 {
+    font-size: var(--font-size-xl);
+    margin-top: 0px;
+    color: var(--color-text);
+  }
+}
