@@ -2,12 +2,16 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
+  --font-size-xxs: 0.625rem;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
   --font-size-lg: 1.25rem;
   --font-size-xl: 1.5rem;
   --font-size-xxl: 2rem;
+  --shadow-sm: 0 1px 2px var(--color-shadow);
+  --shadow-md: 0 2px 6px var(--color-shadow);
+  --shadow-lg: 0 4px 12px var(--color-shadow);
 }
 
 /* ─────────────── Nord Theme ─────────────── */
@@ -31,6 +35,8 @@
   --color-warning: #d08770;
   --color-success: #a3be8c;
   --color-info: #88c0d0;
+
+  --color-shadow: rgba(46, 52, 64, 0.3);
 }
 
 /* ─────────────── catppuccin Theme ─────────────── */
@@ -54,6 +60,7 @@
   --color-warning: #e5c890;
   --color-success: #a6d189;
   --color-info: #99d1db;
+  --color-shadow: rgba(48, 52, 70, 0.3);
 }
 
 /* ─────────────── Everforest Theme (Dark Medium) ─────────────── */
@@ -77,6 +84,7 @@
   --color-warning: #dbbc7f;
   --color-success: #a7c080;
   --color-info: #7fbbb3;
+  --color-shadow: rgba(47, 56, 62, 0.28);
 }
 
 [data-theme="gruvbox"] {
@@ -99,4 +107,5 @@
   --color-warning: #fabd2f;
   --color-success: #b8bb26;
   --color-info: #83a598;
+  --color-shadow: rgba(50, 48, 47, 0.3);
 }
