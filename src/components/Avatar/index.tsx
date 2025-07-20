@@ -1,9 +1,19 @@
 import "./index.css";
 
-const Avatar = () => {
+interface AvatarProps {
+  imageUrl: string;
+  alt: string;
+  className: string;
+}
+
+const Avatar = ({
+  imageUrl,
+  alt,
+  className = "avatar-size-medium",
+}: AvatarProps) => {
   return (
-    <div id="avatar-ring">
-      <img src="/avatar.png" alt="Avatar" className="avatar-img" />
+    <div id="avatar-ring" className={className}>
+      <img src={imageUrl} alt={alt} className="avatar-img" />
     </div>
   );
 };

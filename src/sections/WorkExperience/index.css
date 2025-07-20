@@ -1,0 +1,48 @@
+#work-section {
+  p {
+    margin: 0;
+  }
+}
+.company-logo {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-items: start;
+  cursor: pointer;
+  h5 {
+    color: var(--color-text);
+    margin: 0;
+  }
+  span {
+    color: var(--color-text-muted);
+    margin: 0;
+    font-size: var(--font-size-xs);
+  }
+}
+
+.experience-description {
+  h2 {
+    font-size: var(--font-size-xl);
+    margin-top: 0px;
+    color: var(--color-primary);
+    &:hover {
+      color: var(--color-primary-hover);
+    }
+  }
+  a {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}

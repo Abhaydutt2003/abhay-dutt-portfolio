@@ -1,4 +1,4 @@
-import { About } from "./sections";
+import { About, Projects, WorkExperience } from "./sections";
 import { Divider, ThemeToggle } from "./components";
 import "./styles/App.css";
 
@@ -8,6 +8,9 @@ function App() {
       <ThemeToggle />
       <About />
       <Divider />
+      <WorkExperience />
+      <Divider />
+      <Projects />
     </div>
   );
 }
