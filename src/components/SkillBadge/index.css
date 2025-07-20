@@ -1,0 +1,66 @@
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35em 1em;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--color-border);
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.skill-badge-size-large {
+  font-size: var(--font-size-lg);
+  padding: 0.5em 1.5em;
+}
+.skill-badge-size-medium {
+  font-size: var(--font-size-md);
+  padding: 0.4em 1.2em;
+}
+.skill-badge-size-small {
+  font-size: var(--font-size-sm);
+  padding: 0.3em 1em;
+}
+.skill-badge-size-x-small {
+  font-size: var(--font-size-xs);
+  padding: 0.2em 0.7em;
+}
+
+/* Responsive breakpoints, similar to Avatar */
+@media (max-width: 1024px) {
+  .md\:skill-badge-size-medium {
+    font-size: var(--font-size-lg);
+    padding: 0.5em 1.5em;
+  }
+  .md\:skill-badge-size-small {
+    font-size: var(--font-size-md);
+    padding: 0.4em 1.2em;
+  }
+  .md\:skill-badge-size-x-small {
+    font-size: var(--font-size-sm);
+    padding: 0.3em 1em;
+  }
+}
+@media (max-width: 768px) {
+  .sm\:skill-badge-size-small {
+    font-size: var(--font-size-md);
+    padding: 0.4em 1.2em;
+  }
+  .sm\:skill-badge-size-x-small {
+    font-size: var(--font-size-sm);
+    padding: 0.3em 1em;
+  }
+}
+@media (max-width: 480px) {
+  .xs\:skill-badge-size-x-small {
+    font-size: var(--font-size-sm);
+    padding: 0.3em 1em;
+  }
+}

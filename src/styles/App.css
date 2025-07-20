@@ -27,6 +27,11 @@ p {
 
 .section-heading {
   font-weight: var(--font-weight-bold);
+  /* background-color: aqua; */
+  /* width: fit-content;
+  min-height: fit-content;
+  height: fit-content;
+  min-height: fit-content; */
 }
 
 .section-container {
@@ -48,6 +53,12 @@ p {
   p {
     font-size: var(--font-size-sm);
     padding: 0;
+  }
+
+  @media (max-width: 738px) {
+    width: fit-content;
+    max-width: fit-content;
+    /* background-color: azure; */
   }
 }
 
