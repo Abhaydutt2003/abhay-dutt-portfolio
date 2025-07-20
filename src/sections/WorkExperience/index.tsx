@@ -55,6 +55,22 @@ const companies = [
   },
 ];
 
+function highlightKeywords(description: string, keywords: string[]) {
+  const sortedKeywords = [...keywords].sort((a, b) => b.length - a.length);
+  const regex = new RegExp(`(${sortedKeywords.join("|")})`, "gi");
+  const parts = description.split(regex);
+
+  return parts.map((part, i) =>
+    sortedKeywords.some(
+      (keyword) => part.toLowerCase() === keyword.toLowerCase()
+    ) ? (
+      <strong key={i}>{part}</strong>
+    ) : (
+      part
+    )
+  );
+}
+
 const WorkExperience = () => {
   return (
     <section className="section-outer-container" id="work-section">
@@ -63,7 +79,7 @@ const WorkExperience = () => {
       </div>
       {companies.map((company, index) => {
         return (
-          <div className="section-container">
+          <div className="section-container" key={company.name}>
             <div className="section-left-container">
               <a
                 className="company-logo"
@@ -89,12 +105,14 @@ const WorkExperience = () => {
                 <h2>{company.role}</h2>
                 <Link />
               </a>
-              <p>{company.descripion}</p>
-              <div className="skills-container">
+              <p>
+                {highlightKeywords(company.descripion, company.skills || [])}
+              </p>
+              {/* <div className="skills-container">
                 {company.skills?.map((skill, skillIndex) => (
                   <SkillBadge key={skillIndex} skill={skill} size="x-small" />
                 ))}
-              </div>
+              </div> */}
               {index < companies.length - 1 && (
                 <Divider noBottomPadding={true} />
               )}

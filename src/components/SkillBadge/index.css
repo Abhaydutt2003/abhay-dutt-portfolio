@@ -32,6 +32,10 @@
   font-size: var(--font-size-xs);
   padding: 0.2em 0.7em;
 }
+.skill-badge-size-xx-small {
+  font-size: var(--font-size-xxs);
+  padding: 0.1em 0.5em;
+}
 
 /* Responsive breakpoints, similar to Avatar */
 @media (max-width: 1024px) {
@@ -57,10 +61,18 @@
     font-size: var(--font-size-sm);
     padding: 0.3em 1em;
   }
+  .xxs\:skill-badge-size-xx-small {
+    font-size: var(--font-size-xxs);
+    padding: 0.1em 0.5em;
+  }
 }
 @media (max-width: 480px) {
   .xs\:skill-badge-size-x-small {
     font-size: var(--font-size-sm);
     padding: 0.3em 1em;
+  }
+  .xxs\:skill-badge-size-xx-small {
+    font-size: var(--font-size-xxs);
+    padding: 0.1em 0.5em;
   }
 }

@@ -11,6 +11,7 @@ function App() {
       <WorkExperience />
       <Divider />
       <Projects />
+      <Divider />
     </div>
   );
 }

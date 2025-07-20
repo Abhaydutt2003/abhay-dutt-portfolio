@@ -2,7 +2,7 @@ import "./index.css";
 
 interface SkillBadgeProps {
   skill: string;
-  size?: "large" | "medium" | "small" | "x-small";
+  size?: "large" | "medium" | "small" | "x-small" | "xx-small";
   className?: string;
 }
 
