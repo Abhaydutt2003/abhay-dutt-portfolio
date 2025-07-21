@@ -6,7 +6,7 @@ const projects = [
     title: "Voyage",
     videoId: "Screen_Recording_2025-07-19_at_7.41.43_PM_llu3ay",
     description:
-      "Voyage is a production-ready, geo-enabled web platform designed for modern property management and discovery",
+      "Voyage is a production-ready, geo-enabled web platform designed for modern property management and discovery, fully deployed on AWS.",
     skills: [
       "AWS EC2",
       "AWS RDS",
