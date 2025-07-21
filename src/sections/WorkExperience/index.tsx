@@ -1,5 +1,5 @@
 import { Link } from "lucide-react";
-import { Avatar, Divider, SkillBadge } from "../../components";
+import { Avatar, Divider } from "../../components";
 import "./index.css";
 const companies = [
   {

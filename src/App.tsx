@@ -1,4 +1,10 @@
-import { About, Projects, SkillsSection, WorkExperience } from "./sections";
+import {
+  About,
+  ContactsSection,
+  Projects,
+  SkillsSection,
+  WorkExperience,
+} from "./sections";
 import { Divider, ThemeToggle } from "./components";
 import "./styles/App.css";
 
@@ -14,6 +20,7 @@ function App() {
       <Divider />
       <SkillsSection />
       <Divider />
+      <ContactsSection />
     </div>
   );
 }
