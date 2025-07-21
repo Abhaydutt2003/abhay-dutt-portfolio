@@ -1,0 +1,35 @@
+#contact-links {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    svg {
+      color: var(--color-text);
+    }
+  }
+  a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    transition: color 0.2s, text-decoration-color 0.2s;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: transparent;
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    outline: none;
+  }
+  a:active {
+    color: var(--color-primary-active);
+  }
+}
