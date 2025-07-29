@@ -2,6 +2,29 @@
   position: absolute;
   right: 1rem;
   top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    transition: color 0.2s, text-decoration-color 0.2s;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: transparent;
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
+    outline: none;
+  }
+  a:active {
+    color: var(--color-primary-active);
+  }
 }
 
 .theme-toggle-btn {
@@ -34,6 +57,7 @@
   margin-top: 0.25em;
   overflow: hidden;
   min-width: 160px;
+  top: 40px;
 }
 
 .theme-toggle-option {

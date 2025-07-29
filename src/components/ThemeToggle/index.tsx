@@ -57,6 +57,9 @@ const ThemeToggle = () => {
 
   return (
     <div className="theme-toggle" ref={dropdownRef}>
+      <a href="https://drive.google.com/file/d/1MlQj8QT9ZY65182jigSYrWFkklkPnX27/view?usp=sharing">
+        Resume
+      </a>
       <button
         className="theme-toggle-btn"
         onClick={() => setIsOpen((o) => !o)}
